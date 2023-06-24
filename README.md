@@ -33,3 +33,14 @@ Replit上のファイルは公開されます(無料モードの条件)。
 50人分の以下のようなダミーCSVデータを作って下さい。
 ユーザID,漢字氏名,ひらがななまえ
 ```
+何度やっても五十音順で生成してくれなかった以下のようにして作り変えました(zsh)。
+
+``` z-shell
+head -1 orig.csv > meibo.csv
+tail -n +2 orig.csv|cut -d, -f2,3| {i=1
+  typeset -Z 4 i
+  while read l; do
+    echo "id$i,$l"
+	i=$((++i))
+  done} >> meibo.csv
+```
