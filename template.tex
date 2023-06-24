@@ -3,6 +3,7 @@
 \pagestyle{empty}
 \usepackage{okumacro}	% required for `\ruby' (yatex added)
 \begin{document}
+% ここから-------------------
 \section*{割引券}
 \huge
 \begin{tabular}{|c|c|c|}
@@ -10,5 +11,6 @@
  ::ユーザID:: & \ruby{::氏名::}{::読み仮名::} \\\hline
 \end{tabular}
 \pagebreak
-
+% ここまでの部分が CSVファイルのレコードに応じてその件数分だけ生成される。
+% その結果は out/output.tex に書き込まれる。
 \end{document}
