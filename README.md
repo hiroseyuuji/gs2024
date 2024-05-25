@@ -1,9 +1,9 @@
-gs2023
+gs2024
 ======
 利用法
 ------
 1. [replit](https://replit.com/)にログインしておきます
-2. https://replit.com/@koekionline1/gs2023 を開きます
+2. https://replit.com/@koekionline1/gs2024 を開きます
 3. 右上の [Fork] ボタンを押しName/Descriptionを確認後 [Fork Repl] を押します
 4. Run ボタンを押し左側にできた out/ を開きPDFファイルをクリックします
 
